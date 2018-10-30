@@ -14,5 +14,4 @@ setup(name='nzigen-codes',
       test_suite='test',
       install_requires=[
           'pycrypto',
-      ],
-      zip_safe=False)
+      ])
