@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from setuptools import setup
+from setuptools import setup, find_packages
 
 setup(name='nzigen_codes',
       version='0.1',
@@ -9,10 +9,8 @@ setup(name='nzigen_codes',
       author='ysawa',
       author_email='ysawa@nzigen.com',
       license='MIT',
-      packages=[
-          'base',
-          'encryption',
-      ],
+      packages=find_packages(),
+      test_suite='test',
       install_requires=[
           'pycrypto',
       ],
