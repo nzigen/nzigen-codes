@@ -2,7 +2,7 @@
 
 from setuptools import setup, find_packages
 
-setup(name='nzigen_codes',
+setup(name='nzigen-codes',
       version='0.1',
       description='The funniest joke in the world',
       url='https://github.com/nzigen/nzigen-codes',
