@@ -3,7 +3,7 @@ from base64 import b64decode, b64encode
 from Crypto import Random
 from Crypto.Cipher import AES
 
-from base.padding import unpad, pad
+from nzigen_codes.base.padding import unpad, pad
 
 
 def decrypt_text(key, encrypted):
