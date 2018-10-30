@@ -9,11 +9,11 @@ class TestPadding(unittest.TestCase):
         pass
 
     def test_unpad(self):
-        self.assertEqual('1234', unpad('1234\x04\x04\x04\x04'))
-        self.assertEqual('abcd', unpad('abcd\x0c\x0c\x0c\x0c\x0c\x0c\x0c\x0c\x0c\x0c\x0c\x0c'))
-        self.assertEqual('111111', unpad('111111\06\06\06\06\06\06'))
+        self.assertEqual(b'1234', unpad('1234\x04\x04\x04\x04'))
+        self.assertEqual(b'abcd', unpad(b'abcd\x0c\x0c\x0c\x0c\x0c\x0c\x0c\x0c\x0c\x0c\x0c\x0c'))
+        self.assertEqual(b'111111', unpad('111111\06\06\06\06\06\06'))
 
     def test_pad(self):
-        self.assertEqual('1234\x04\x04\x04\x04', pad('1234', 8))
-        self.assertEqual('abcd\x0c\x0c\x0c\x0c\x0c\x0c\x0c\x0c\x0c\x0c\x0c\x0c', pad('abcd', 16))
-        self.assertEqual('111111\06\06\06\06\06\06', pad('111111', 6))
+        self.assertEqual(b'1234\x04\x04\x04\x04', pad('1234', 8))
+        self.assertEqual(b'abcd\x0c\x0c\x0c\x0c\x0c\x0c\x0c\x0c\x0c\x0c\x0c\x0c', pad(b'abcd', 16))
+        self.assertEqual(b'111111\06\06\06\06\06\06', pad('111111', 6))

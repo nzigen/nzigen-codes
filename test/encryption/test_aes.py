@@ -14,4 +14,4 @@ class TestAes(unittest.TestCase):
 
         key1 = 'Ohh/ah7eNee9thoh'
         self.assertEqual('Hello, world!', decrypt_text(key1, encrypt_text(key1, 'Hello, world!')).decode("utf-8"))
-
+        self.assertEqual('こんにちは、世界。', decrypt_text(key1, encrypt_text(key1, 'こんにちは、世界。')).decode("utf-8"))
