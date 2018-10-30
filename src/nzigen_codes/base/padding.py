@@ -1,6 +1,7 @@
 
 def unpad(code: str) -> str:
-    pad = ord(code[len(code) - 1])
+    pad = code[len(code) - 1]
+    pad = pad if isinstance(pad, int) else ord(pad)
     if pad <= 0:
         raise ValueError('padding is zero')
     return code[:-pad]
