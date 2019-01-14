@@ -2,10 +2,10 @@
 
 from setuptools import setup, find_packages
 
-setup(name='nzigen-codes',
+setup(name='nzigen_low_level',
       version='0.1',
       description='The funniest joke in the world',
-      url='https://github.com/nzigen/nzigen-codes',
+      url='https://github.com/nzigen/nzigen-low-level-python',
       author='Yoshihiro Sawa',
       author_email='ysawa@nzigen.com',
       license='MIT',
