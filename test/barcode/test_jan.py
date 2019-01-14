@@ -1,6 +1,6 @@
 import unittest
 
-from nzigen_codes.barcode.jan import modulus_10_weight_3
+from nzigen_low_level.barcode.jan import modulus_10_weight_3
 
 
 class TestJan(unittest.TestCase):

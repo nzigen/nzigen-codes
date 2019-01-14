@@ -1,6 +1,6 @@
 import unittest
 
-from nzigen_codes.base.padding import unpad, pad
+from nzigen_low_level.base.padding import unpad, pad
 
 
 class TestPadding(unittest.TestCase):

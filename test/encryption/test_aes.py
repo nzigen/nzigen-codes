@@ -1,6 +1,6 @@
 import unittest
 
-from nzigen_codes.encryption.aes import encrypt_text, decrypt_text
+from nzigen_low_level.encryption.aes import encrypt_text, decrypt_text
 
 
 class TestAes(unittest.TestCase):
