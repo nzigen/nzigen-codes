@@ -1,5 +1,8 @@
-
 def modulus_10_weight_3(code):
+    """
+    モジュラス10ウェイト3 のチェックディジットを返す
+    :rtype: str
+    """
     code_string = str(code)
     a = 0
     b = 0
@@ -12,6 +15,6 @@ def modulus_10_weight_3(code):
 
     d = (a + (b * 3)) % 10
     if d == 0:
-        return 0
+        return '0'
     d = 10 - d
-    return d
+    return str(d)
